@@ -1,0 +1,78 @@
+======================================================================
+TEST BAŞARISIZLIK RAPORU
+======================================================================
+
+Test Adı           : test_login_button_exists
+Tarih              : 05.05.2026 13:09:27
+Test Açıklaması    : TEST: Giriş butonu sayfada mevcut olmalı.
+        BEKLENEN: 'submit' ID'li buton görünür olmalı.
+        DOĞRULAMA: Buton bulunabilmeli ve tıklanabilir olmalı.
+Hata Olduğunda URL : https://debim.neu.edu.tr/
+Sayfa Başlığı      : Anasayfa | DEBİM
+
+----------------------------------------------------------------------
+HATA TÜRÜ          : Doğrulama Hatası (AssertionError)
+NE ANLAMA GELİYOR  : Beklenen sonuç ile gerçekleşen sonuç eşleşmedi.
+
+OLASI SEBEPLER:
+  - Site beklenen davranışı sergilemedi
+  - Test verisi yanlış
+  - Önceki adım başarısız oldu, etkisi devam ediyor
+
+ÇÖZÜM ÖNERİSİ      : Test mantığını ve test verisini kontrol edin.
+
+----------------------------------------------------------------------
+TAM HATA MESAJI:
+Giriş butonu bulunamadı
+assert False
+ +  where False = is_login_button_visible()
+ +    where is_login_button_visible = <pages.debim_login_page.DebimLoginPage object at 0x7f932833afd0>.is_login_button_visible
+ +      where <pages.debim_login_page.DebimLoginPage object at 0x7f932833afd0> = <tests.test_debim.TestDebim object at 0x7f9319723790>.lp
+
+STACK TRACE:
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/_pytest/runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "/opt/anaconda3/lib/python3.9/site-packages/_pytest/runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/opt/anaconda3/lib/python3.9/site-packages/_pytest/logging.py", line 850, in pytest_runtest_call
+    yield
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/opt/anaconda3/lib/python3.9/site-packages/_pytest/capture.py", line 900, in pytest_runtest_call
+    return (yield)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/opt/anaconda3/lib/python3.9/site-packages/_pytest/skipping.py", line 263, in pytest_runtest_call
+    return (yield)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "/opt/anaconda3/lib/python3.9/site-packages/_pytest/runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "/opt/anaconda3/lib/python3.9/site-packages/_pytest/python.py", line 1671, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "/opt/anaconda3/lib/python3.9/site-packages/_pytest/python.py", line 157, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "/Users/sellll/Desktop/selenium_py/tests/test_debim.py", line 54, in test_login_button_exists
+    assert self.lp.is_login_button_visible(), \
+AssertionError: Giriş butonu bulunamadı
+assert False
+ +  where False = is_login_button_visible()
+ +    where is_login_button_visible = <pages.debim_login_page.DebimLoginPage object at 0x7f932833afd0>.is_login_button_visible
+ +      where <pages.debim_login_page.DebimLoginPage object at 0x7f932833afd0> = <tests.test_debim.TestDebim object at 0x7f9319723790>.lp
