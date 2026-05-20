@@ -195,5 +195,12 @@ Software Engineer Intern at Eazy Financial Services (EazyPay), Bahrain — Summe
 - 📧 Email: kudretselina7@gmail.com
 
 ---
+**Svetlana Caraseni**
 
+
+Software Engineering Student at Near East University, graduating June 2026.
+
+- 🔗 LinkedIn: https://www.linkedin.com/in/sveta-caraseni-91b903291/
+- 💻 GitHub: https://github.com/scaraseni
+- 📧 Email: scaraseni@gmail.com
 ⭐ If you find this project helpful, please consider giving it a star!
